@@ -4,56 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkinfo</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style.css"> 
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Arkinfo</h1>
-            <p>Your gateway to Game information</p>
+    <div class="site-wrapper">
+        
+        <header id="main-header">
+            <div class="header-content">
+                <h1>Arkinfo</h1>
+                <p>Your gateway to Game information</p>
+            </div>
+            
+            <div class="matrix-container">
+                <div class="matrix-pattern">
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                    <div class="matrix-column"></div>
+                </div>
+            </div>
+            
         </header>
-        <main>
-            <section>
-                <form action="">
-                    <div>
+        
+        <main id="main-content">
+            <section id="form-section" class="main-panel">
+                <form id="game-form" action="#">
+                    <h2>Buat Informasi Game Baru</h2>
+                    <div class="form-group">
                         <label for="game-name">Nama Game</label>
-                        <input type="text" placeholder="Masukan Nama Game" />
+                        <input type="text" id="game-name" placeholder="Masukan Nama Game" required/>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="category">Kategori</label>
-                        <input type="text" placeholder="Masukan Kategori Game" />
+                        <input type="text" id="category" placeholder="Masukan Kategori Game" required/>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="information">Informasi</label>
-                        <input type="text" placeholder="Masukan Informasi Game" />
+                        <input type="text" id="information" placeholder="Masukan Informasi Game" required/>
                     </div>
-                    <button type="submit">Buat Informasi</button>
+                    <button type="submit" id="submit-button">
+                        <span>Buat Informasi</span>
+                    </button>
                 </form>
             </section>
-            <section>
-                <div class="card">
-                    <h2>Game Title</h2>
-                    <p>Category: Action</p>
-                    <p>Information: This is a sample game information.</p>
-                    <button type="button"></button>
-                </div>
-                <div class="card">
-                    <h2>Game Title</h2>
-                    <p>Category: Action</p>
-                    <p>Information: This is a sample game information.</p>
-                    <button type="button"></button>
-                </div>
-                <div class="card">
-                    <h2>Game Title</h2>
-                    <p>Category: Action</p>
-                    <p>Information: This is a sample game information.</p>
-                    <button type="button"></button>
+            
+            <section id="card-list-section" class="main-panel">
+                <div class="card-grid">
+                    <div class="game-card">
+                        <h3>Game Title</h3>
+                        <p>Category: Action</p>
+                        <p>Information: This is a sample game information.</p>
+                        <div class="devide-button">
+                            <button type="button" class="action-button delete-button">
+                                <span>Detail</span>
+                            </button>
+                            <button type="button" class="action-button delete-button">
+                                <span>Hapus</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <h3>Game Title</h3>
+                        <p>Category: Action</p>
+                        <p>Information: This is a sample game information.</p>
+                        <div class="devide-button">
+                            <button type="button" class="action-button delete-button">
+                                <span>Detail</span>
+                            </button>
+                            <button type="button" class="action-button delete-button">
+                                <span>Hapus</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <h3>Game Title</h3>
+                        <p>Category: Action</p>
+                        <p>Information: This is a sample game information.</p>
+                        <div class="devide-button">
+                            <button type="button" class="action-button delete-button">
+                                <span>Detail</span>
+                            </button>
+                            <button type="button" class="action-button delete-button">
+                                <span>Hapus</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <h3>&copy; All Right Reserved</h3>
+        
+        <footer id="main-footer">
+            <h3>&copy; Arkinfo All Right Reserved</h3>
         </footer>
+        
     </div>
 </body>
 </html>

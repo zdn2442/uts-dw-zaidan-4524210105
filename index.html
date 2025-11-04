@@ -78,7 +78,7 @@
                         <label for="information">Informasi</label>
                         <input type="text" id="information" placeholder="Masukan Informasi Game" required/>
                     </div>
-                    <button type="submit" id="submit-button">
+                    <button type="submit" id="submit-button" onclick="">
                         <span>Buat Informasi</span>
                     </button>
                 </form>
@@ -87,9 +87,9 @@
             <section id="card-list-section" class="main-panel">
                 <div class="card-grid">
                     <div class="game-card">
-                        <h3>Game Title</h3>
-                        <p>Category: Action</p>
-                        <p>Information: This is a sample game information.</p>
+                        <h3 id="card-title">Judul Game</h3>
+                        <p id="card-category">Kategori: Action</p>
+                        <p id="card-info">Informasi: Ini output dari informasi</p>
                         <div class="devide-button">
                             <button type="button" class="action-button delete-button">
                                 <span>Detail</span>
@@ -100,9 +100,9 @@
                         </div>
                     </div>
                     <div class="game-card">
-                        <h3>Game Title</h3>
-                        <p>Category: Action</p>
-                        <p>Information: This is a sample game information.</p>
+                        <h3>Judul Game</h3>
+                        <p>Kategori: Action</p>
+                        <p>Informasi: Ini output dari informasi</p>
                         <div class="devide-button">
                             <button type="button" class="action-button delete-button">
                                 <span>Detail</span>
@@ -113,9 +113,9 @@
                         </div>
                     </div>
                     <div class="game-card">
-                        <h3>Game Title</h3>
-                        <p>Category: Action</p>
-                        <p>Information: This is a sample game information.</p>
+                        <h3>Judul Game</h3>
+                        <p>Kategori: Action</p>
+                        <p>Informasi: Ini output dari informasi</p>
                         <div class="devide-button">
                             <button type="button" class="action-button delete-button">
                                 <span>Detail</span>
@@ -134,5 +134,6 @@
         </footer>
         
     </div>
+    <script src="controller/index.js" defer></script>
 </body>
 </html>
